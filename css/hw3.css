@@ -1,0 +1,153 @@
+/*** COLORS
+dark blue: #0433BF; 
+darkest navy blue: #021859; 
+light cornflowery blue: #0B9ED9; 
+another darker blue: #032CA6;
+accent coraly pink: #F25CA2;
+***/
+body {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #0433BF;
+    background-image: url("../img/flywheel.jpg");
+    background-repeat: no-repeat;
+    padding: 2%;
+    background-size: 100%;
+    text-align: center;
+}
+
+/*** NAVIGATION ***/
+nav {
+    /* margin: 0 auto; */
+    /* display: inline-block; */
+}
+
+nav a {
+    display: inline-block;
+    background-color: #F25CA2;
+    color: #032CA6;
+    margin: 2%;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+nav a:hover, 
+nav a:focus {
+    /* background-color: rgba(250, 102, 171, 0.75) */
+    background-color: rgba(250, 242, 246, 0.75);
+    border: 2px solid #F25CA2; 
+}
+/* REPLICATE this active class styling in portfolio sites! */
+.active {
+    background-color: #0433BF;
+    border: 2px solid #F25CA2; 
+    color: #F25CA2;
+}
+
+/*** HEADINGS ***/
+h1, h2 {
+    color: #021859;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #54bbe4;
+    text-shadow: 2px 2px 2px #021859;
+    text-align: center;
+    font-size: 250%;
+}
+
+p {
+    color: #021859;
+}
+
+/*** STRUCTURE ***/
+section.right {
+    background-color: #ffffff;
+    width: 75%;
+    float: left;
+    padding: 2.5%;
+}
+
+aside.left {
+    background: #0433BF;
+    width: 20%;
+    float: left;
+    height: 100vh;
+}
+
+/*** LINKS ***/
+section.right a {
+    color: #0B9ED9;
+    text-decoration: none;
+    /* text-shadow: 1px 1px 1px #021859; */
+}
+section.right a:hover {
+    color: #F25CA2;
+}
+
+/*** ASIDE IMAGES ***/
+.left img {
+    height: 100px;
+    width: 150px;
+    display: block;
+    border: 2px solid #F25CA2; 
+    margin: 10% auto;
+}
+
+/*** TABLE ***/
+table, th, td {
+    border: 1px solid #ffffff;
+    border-collapse: collapse;
+}
+table {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    width: 90%;
+    font-size: 80%;
+    line-height: 90%;
+}
+th, td {
+    padding: 1.35%;
+    text-align: center;
+}
+
+th:first-child,
+td:first-child {
+    text-align: left;
+}
+/* I know Dr. Van Lent asked for a 2px border-radius, but I made it 7px so it'd be noticeable, if only just barely. */
+th:first-child {
+    border-radius: 7px 0 0;
+}
+th:last-child {
+    border-radius: 0 7px 0 0;
+}
+
+th {
+    background: linear-gradient(rgba(0,212,255,1) 0%, rgba(11,158,217,1) 35%, rgba(3,44,166,1) 100%);
+    /* border: 1px solid #F25CA2; */
+    border-bottom: 4px solid #F25CA2;
+    font-weight: bold;
+    color: #F25CA2;
+    text-shadow: 1px 1px 1px #021859;
+}
+td {
+    color: #021859;
+    background-color: rgba(11, 158, 217, 0.7);
+}
+tr:last-child td:first-child {
+    border-radius: 0 0 0 7px;
+}
+tr:last-child td:last-child {
+    border-radius: 0 0 7px 0;
+}
+tr:hover {
+    background-color: rgba(11, 158, 217, 1);
+}
